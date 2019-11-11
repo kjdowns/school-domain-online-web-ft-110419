@@ -18,4 +18,8 @@ def add_student(name, grade)
   end
 end
 
+def grade(grade)
+  self.roster[grade]
+end
+
 end
