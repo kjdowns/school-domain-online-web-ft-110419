@@ -10,7 +10,12 @@ def initialize(name)
 end
 
 def add_student(name, grade)
- self.roster[grade] ? self.roster[grade] << name : self.roster[grade] = name
+  if self.roster[grade]
+    self.roster[grade] << name
+  else
+    self.roster[grade] = []
+    self.roster[grade] << name
+  end
 end
 
 end
