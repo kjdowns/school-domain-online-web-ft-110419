@@ -22,4 +22,11 @@ def grade(grade)
   self.roster[grade]
 end
 
+def sort 
+  self.roster.each do |grade, name|
+    grade = name.sort!
+  end
+  self.roster
+end
+
 end
