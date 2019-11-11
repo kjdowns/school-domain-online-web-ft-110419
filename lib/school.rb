@@ -3,14 +3,14 @@ class School
 
 attr_reader :name 
 
-ROSTER = {}
+roster = {}
 
 def initialize(name)
   @name = name
 end
 
 def add_student(name, grade)
- self.ROSTER[grade] ? self.ROSTER[grade] << name : self.ROSTER[grade] = name
+ self.roster[grade] ? self.roster[grade] << name : self.roster[grade] = name
 end
 
 end
